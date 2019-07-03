@@ -41,6 +41,10 @@ public class TestUtil extends TestBase{
 	private
 	WebElement AutomotiveCategoryButton;
 	
+	@FindBy(xpath= "/html/body/div[2]/section/div/div[3]/div/div/div/div/div/form/div[14]/div/input")
+	private
+	WebElement AdUpdateButton;
+	
 	@FindBy(xpath="//span[@class='fav-heart' and @style='background: rgb(148, 148, 148);']")
 	private
 	WebElement FavouriteButtonUnselected;
@@ -115,6 +119,14 @@ public class TestUtil extends TestBase{
 
 	public void setFavouriteButtonUnselected(WebElement favouriteButtonUnselected) {
 		FavouriteButtonUnselected = favouriteButtonUnselected;
+	}
+
+	public WebElement getAdUpdateButton() {
+		return AdUpdateButton;
+	}
+
+	public void setAdUpdateButton(WebElement adUpdateButton) {
+		AdUpdateButton = adUpdateButton;
 	}
 	
 	
