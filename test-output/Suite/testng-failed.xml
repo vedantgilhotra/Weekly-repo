@@ -6,17 +6,13 @@
   </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="com.Weekly.qa.TestCases.CurrentAdsPageTest">
+      <class name="com.Weekly.qa.TestCases.SavedAdsPageTest">
         <methods>
-          <include name="TC_27"/>
-          <include name="TC_28"/>
-          <include name="terminate"/>
-          <include name="TC_18"/>
-          <include name="TC_29"/>
+          <include name="destroy"/>
           <include name="setup"/>
-          <include name="TC_26"/>
+          <include name="TC_60"/>
         </methods>
-      </class> <!-- com.Weekly.qa.TestCases.CurrentAdsPageTest -->
+      </class> <!-- com.Weekly.qa.TestCases.SavedAdsPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

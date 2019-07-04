@@ -8,11 +8,15 @@
 
   <test thread-count="5" name="Test">
     <classes>
-    <!--<class name="com.Weekly.qa.TestCases.WebHomePageTest"/> 
+     <class name="com.Weekly.qa.TestCases.WebHomePageTest"/>
+    <!-- 
        <class name="com.Weekly.qa.TestCases.CurrentAdsPageTest"/>
-        <class name="com.Weekly.qa.TestCases.PastAdsPageTest"/> -->
-       
-      <class name="com.Weekly.qa.TestCases.FavouriteAdsPageTest"/>
+        <class name="com.Weekly.qa.TestCases.PastAdsPageTest"/> 
+         <class name="com.Weekly.qa.TestCases.FavouriteAdsPageTest"/>
+          <class name="com.Weekly.qa.TestCases.SavedAdsPageTest"/>-->
+         
+      
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

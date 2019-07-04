@@ -47,6 +47,9 @@ public class WebHomePage extends TestBase{
 		@FindBy(xpath = "/html/body/div[2]/section/div/div[1]/div[3]/div/div/div/div/table/thead/tr/th[1]")
 		WebElement PictureTableHeader;
 		
+	
+		
+		
 		// Initializing the Page Objects:
 			public WebHomePage() {
 			PageFactory.initElements(driver, this);

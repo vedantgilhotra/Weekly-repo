@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.Weekly.qa.ExtentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test name="Test(failed)">
     <classes>
-      <class name="com.Weekly.qa.TestCases.FavouriteAdsPageTest">
+      <class name="com.Weekly.qa.TestCases.SavedAdsPageTest">
         <methods>
-          <include name="TC_50"/>
-          <include name="setup"/>
           <include name="destroy"/>
+          <include name="setup"/>
+          <include name="TC_60"/>
         </methods>
-      </class> <!-- com.Weekly.qa.TestCases.FavouriteAdsPageTest -->
+      </class> <!-- com.Weekly.qa.TestCases.SavedAdsPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

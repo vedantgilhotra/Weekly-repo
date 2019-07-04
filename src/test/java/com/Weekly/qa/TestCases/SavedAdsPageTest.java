@@ -53,7 +53,7 @@ public class SavedAdsPageTest extends TestBase{
 	public void TC_61() {
 		savedAdsPage.getEditButton().click();
 		String check = savedAdsPage.GetTitle();
-		Assert.assertEquals(check,"WeeklyPaper - Update Your Ads","User could not edit the page after clicking the edit button");
+		Assert.assertEquals(check,"WeeklyPaper - Update Your Ads");
 		
 	}
 	
@@ -86,7 +86,16 @@ public class SavedAdsPageTest extends TestBase{
 	
 	@Test(enabled = true)
 	public void TC_64() {
-		
+		testUtil.getPostAdButton().click();
+		currentAdsPage.getTitleAdUpdate().sendKeys("Sample Title");
+		Select statusdrpdwn = new Select(currentAdsPage.getStatusAdUpdate());
+		statusdrpdwn.selectByVisibleText("Save");
+		testUtil.getAdUpdateButton().click(); 
+		if(currentAdsPage.getAdDeleted().isDisplayed())
+		{
+			System.out.println("Ad Has been saved");
+			Assert.assertTrue(true);
+		}
 	}
 	
 	
